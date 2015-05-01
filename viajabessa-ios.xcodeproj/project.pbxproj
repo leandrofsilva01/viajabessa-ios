@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D01781F6D660E96C51FB6E3 /* libPods-viajabessa-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 514ECFADF6F43A0AAB41D615 /* libPods-viajabessa-ios.a */; };
 		9CF8DD091AF43C64008B0460 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8DD081AF43C64008B0460 /* main.m */; };
 		9CF8DD0C1AF43C64008B0460 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8DD0B1AF43C64008B0460 /* AppDelegate.m */; };
 		9CF8DD0F1AF43C64008B0460 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8DD0E1AF43C64008B0460 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		514ECFADF6F43A0AAB41D615 /* libPods-viajabessa-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-viajabessa-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D5B7BAC77B394D0F039E43 /* Pods-viajabessa-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viajabessa-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viajabessa-ios/Pods-viajabessa-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		9CF8DD031AF43C64008B0460 /* viajabessa-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viajabessa-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF8DD071AF43C64008B0460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF8DD081AF43C64008B0460 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		9CF8DD1C1AF43C65008B0460 /* viajabessa-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "viajabessa-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF8DD211AF43C65008B0460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF8DD221AF43C65008B0460 /* viajabessa_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viajabessa_iosTests.m; sourceTree = "<group>"; };
+		CD2C91659D9F4DFE0CF2605C /* Pods-viajabessa-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viajabessa-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-viajabessa-ios/Pods-viajabessa-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D01781F6D660E96C51FB6E3 /* libPods-viajabessa-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B12BE7CD04EBB398B1C79DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				514ECFADF6F43A0AAB41D615 /* libPods-viajabessa-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9CF8DCFA1AF43C64008B0460 = {
 			isa = PBXGroup;
 			children = (
 				9CF8DD051AF43C64008B0460 /* viajabessa-ios */,
 				9CF8DD1F1AF43C65008B0460 /* viajabessa-iosTests */,
 				9CF8DD041AF43C64008B0460 /* Products */,
+				A0CCA7F60970D26C33D8B730 /* Pods */,
+				3B12BE7CD04EBB398B1C79DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +134,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A0CCA7F60970D26C33D8B730 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84D5B7BAC77B394D0F039E43 /* Pods-viajabessa-ios.debug.xcconfig */,
+				CD2C91659D9F4DFE0CF2605C /* Pods-viajabessa-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CF8DD261AF43C65008B0460 /* Build configuration list for PBXNativeTarget "viajabessa-ios" */;
 			buildPhases = (
+				3837F476D2AC0976890F792B /* Check Pods Manifest.lock */,
 				9CF8DCFF1AF43C64008B0460 /* Sources */,
 				9CF8DD001AF43C64008B0460 /* Frameworks */,
 				9CF8DD011AF43C64008B0460 /* Resources */,
+				C6633C7056D63B4B5C07DA55 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3837F476D2AC0976890F792B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6633C7056D63B4B5C07DA55 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-viajabessa-ios/Pods-viajabessa-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CF8DCFF1AF43C64008B0460 /* Sources */ = {
@@ -345,6 +404,7 @@
 		};
 		9CF8DD271AF43C65008B0460 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D5B7BAC77B394D0F039E43 /* Pods-viajabessa-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "viajabessa-ios/Info.plist";
@@ -355,6 +415,7 @@
 		};
 		9CF8DD281AF43C65008B0460 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD2C91659D9F4DFE0CF2605C /* Pods-viajabessa-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "viajabessa-ios/Info.plist";
@@ -416,6 +477,7 @@
 				9CF8DD281AF43C65008B0460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CF8DD291AF43C65008B0460 /* Build configuration list for PBXNativeTarget "viajabessa-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +486,7 @@
 				9CF8DD2B1AF43C65008B0460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
