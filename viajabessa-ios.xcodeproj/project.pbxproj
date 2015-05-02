@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3D01781F6D660E96C51FB6E3 /* libPods-viajabessa-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 514ECFADF6F43A0AAB41D615 /* libPods-viajabessa-ios.a */; };
+		9C1CB8841AF46F9A004151AC /* BaseAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8831AF46F9A004151AC /* BaseAPIClient.m */; };
+		9C1CB8871AF4704D004151AC /* EnvironmentConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8861AF4704D004151AC /* EnvironmentConstants.m */; };
+		9C1CB88A1AF4720C004151AC /* PromotionsAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8891AF4720C004151AC /* PromotionsAPIClient.m */; };
+		9C1CB88D1AF494D5004151AC /* Promotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB88C1AF494D5004151AC /* Promotion.m */; };
+		9C1CB8941AF5244F004151AC /* NSString+Plus.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8931AF5244F004151AC /* NSString+Plus.m */; };
 		9CF8DD091AF43C64008B0460 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8DD081AF43C64008B0460 /* main.m */; };
 		9CF8DD0C1AF43C64008B0460 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8DD0B1AF43C64008B0460 /* AppDelegate.m */; };
 		9CF8DD141AF43C65008B0460 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8DD131AF43C65008B0460 /* Images.xcassets */; };
@@ -30,6 +35,16 @@
 /* Begin PBXFileReference section */
 		514ECFADF6F43A0AAB41D615 /* libPods-viajabessa-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-viajabessa-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D5B7BAC77B394D0F039E43 /* Pods-viajabessa-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viajabessa-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viajabessa-ios/Pods-viajabessa-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		9C1CB8821AF46F9A004151AC /* BaseAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPIClient.h; sourceTree = "<group>"; };
+		9C1CB8831AF46F9A004151AC /* BaseAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPIClient.m; sourceTree = "<group>"; };
+		9C1CB8851AF4704D004151AC /* EnvironmentConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvironmentConstants.h; sourceTree = "<group>"; };
+		9C1CB8861AF4704D004151AC /* EnvironmentConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvironmentConstants.m; sourceTree = "<group>"; };
+		9C1CB8881AF4720C004151AC /* PromotionsAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromotionsAPIClient.h; sourceTree = "<group>"; };
+		9C1CB8891AF4720C004151AC /* PromotionsAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionsAPIClient.m; sourceTree = "<group>"; };
+		9C1CB88B1AF494D5004151AC /* Promotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Promotion.h; sourceTree = "<group>"; };
+		9C1CB88C1AF494D5004151AC /* Promotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Promotion.m; sourceTree = "<group>"; };
+		9C1CB8921AF5244F004151AC /* NSString+Plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Plus.h"; path = "../../../../../Documents/NSString+Plus.h"; sourceTree = "<group>"; };
+		9C1CB8931AF5244F004151AC /* NSString+Plus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Plus.m"; path = "../../../../../Documents/NSString+Plus.m"; sourceTree = "<group>"; };
 		9CF8DD031AF43C64008B0460 /* viajabessa-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viajabessa-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF8DD071AF43C64008B0460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF8DD081AF43C64008B0460 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +86,15 @@
 				514ECFADF6F43A0AAB41D615 /* libPods-viajabessa-ios.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C1CB88E1AF522FC004151AC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9C1CB8921AF5244F004151AC /* NSString+Plus.h */,
+				9C1CB8931AF5244F004151AC /* NSString+Plus.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		9CF8DCFA1AF43C64008B0460 = {
@@ -157,6 +181,8 @@
 		9CF8DD2E1AF4485C008B0460 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9C1CB88B1AF494D5004151AC /* Promotion.h */,
+				9C1CB88C1AF494D5004151AC /* Promotion.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,6 +197,7 @@
 		9CF8DD301AF44880008B0460 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				9C1CB88E1AF522FC004151AC /* Category */,
 				9CF8DD321AF448AB008B0460 /* APIClient */,
 				9CF8DD311AF4489A008B0460 /* Environment */,
 			);
@@ -180,6 +207,8 @@
 		9CF8DD311AF4489A008B0460 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
+				9C1CB8851AF4704D004151AC /* EnvironmentConstants.h */,
+				9C1CB8861AF4704D004151AC /* EnvironmentConstants.m */,
 			);
 			path = Environment;
 			sourceTree = "<group>";
@@ -187,6 +216,10 @@
 		9CF8DD321AF448AB008B0460 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				9C1CB8821AF46F9A004151AC /* BaseAPIClient.h */,
+				9C1CB8831AF46F9A004151AC /* BaseAPIClient.m */,
+				9C1CB8881AF4720C004151AC /* PromotionsAPIClient.h */,
+				9C1CB8891AF4720C004151AC /* PromotionsAPIClient.m */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -351,8 +384,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CF8DD0C1AF43C64008B0460 /* AppDelegate.m in Sources */,
+				9C1CB8941AF5244F004151AC /* NSString+Plus.m in Sources */,
 				9CF8DD091AF43C64008B0460 /* main.m in Sources */,
+				9C1CB8841AF46F9A004151AC /* BaseAPIClient.m in Sources */,
 				9CF8DD431AF44ACB008B0460 /* ListViewController.m in Sources */,
+				9C1CB8871AF4704D004151AC /* EnvironmentConstants.m in Sources */,
+				9C1CB88A1AF4720C004151AC /* PromotionsAPIClient.m in Sources */,
+				9C1CB88D1AF494D5004151AC /* Promotion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

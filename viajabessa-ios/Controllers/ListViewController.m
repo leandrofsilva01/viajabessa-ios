@@ -7,16 +7,23 @@
 //
 
 #import "ListViewController.h"
+#import "PromotionsAPIClient.h"
+#import "Promotion.h"
+#import "NSString+Plus.h"
 
 @interface ListViewController ()
+
+@property (nonatomic, strong) NSArray *promotions;
 
 @end
 
 @implementation ListViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self fetchPromotions];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +40,19 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - My methods
+
+- (void) fetchPromotions
+{
+    [[PromotionsAPIClient shareClient] fetchPromotionsListSuccess:^(NSArray *promotions) {
+        self.promotions = [NSArray arrayWithArray:promotions];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //[self.collectionView reloadData];
+        });
+    } failure:^(NSString *errorMsg) {
+        NSLog(@"%@", errorMsg);
+    }];
+}
 
 @end
