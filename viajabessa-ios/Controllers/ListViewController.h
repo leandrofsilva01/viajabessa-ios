@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ListViewController.h
 //  viajabessa-ios
 //
 //  Created by Leandro Silva on 5/1/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ListViewController : UIViewController
 
 @end
-
