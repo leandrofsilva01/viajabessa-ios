@@ -12,10 +12,10 @@
 		9C1CB8871AF4704D004151AC /* EnvironmentConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8861AF4704D004151AC /* EnvironmentConstants.m */; };
 		9C1CB88A1AF4720C004151AC /* PromotionsAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8891AF4720C004151AC /* PromotionsAPIClient.m */; };
 		9C1CB88D1AF494D5004151AC /* Promotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB88C1AF494D5004151AC /* Promotion.m */; };
-		9C1CB8941AF5244F004151AC /* NSString+Plus.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8931AF5244F004151AC /* NSString+Plus.m */; };
 		9C1CB8971AF52685004151AC /* PromotionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8961AF52685004151AC /* PromotionCollectionViewCell.m */; };
 		9C1CB89A1AF52B0F004151AC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8991AF52B0F004151AC /* DetailViewController.m */; };
 		9C1CB89D1AF5F62C004151AC /* GAITracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB89C1AF5F62C004151AC /* GAITracker.m */; };
+		9C1CB8A11AF691B1004151AC /* NSString+Plus.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8A01AF691B1004151AC /* NSString+Plus.m */; };
 		9CF8DD091AF43C64008B0460 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8DD081AF43C64008B0460 /* main.m */; };
 		9CF8DD0C1AF43C64008B0460 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8DD0B1AF43C64008B0460 /* AppDelegate.m */; };
 		9CF8DD141AF43C65008B0460 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8DD131AF43C65008B0460 /* Images.xcassets */; };
@@ -46,14 +46,14 @@
 		9C1CB8891AF4720C004151AC /* PromotionsAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionsAPIClient.m; sourceTree = "<group>"; };
 		9C1CB88B1AF494D5004151AC /* Promotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Promotion.h; sourceTree = "<group>"; };
 		9C1CB88C1AF494D5004151AC /* Promotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Promotion.m; sourceTree = "<group>"; };
-		9C1CB8921AF5244F004151AC /* NSString+Plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Plus.h"; path = "../../../../../Documents/NSString+Plus.h"; sourceTree = "<group>"; };
-		9C1CB8931AF5244F004151AC /* NSString+Plus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Plus.m"; path = "../../../../../Documents/NSString+Plus.m"; sourceTree = "<group>"; };
 		9C1CB8951AF52685004151AC /* PromotionCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromotionCollectionViewCell.h; sourceTree = "<group>"; };
 		9C1CB8961AF52685004151AC /* PromotionCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionCollectionViewCell.m; sourceTree = "<group>"; };
 		9C1CB8981AF52B0F004151AC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		9C1CB8991AF52B0F004151AC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9C1CB89B1AF5F62C004151AC /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
 		9C1CB89C1AF5F62C004151AC /* GAITracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAITracker.m; sourceTree = "<group>"; };
+		9C1CB89F1AF691B1004151AC /* NSString+Plus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Plus.h"; sourceTree = "<group>"; };
+		9C1CB8A01AF691B1004151AC /* NSString+Plus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Plus.m"; sourceTree = "<group>"; };
 		9CF8DD031AF43C64008B0460 /* viajabessa-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viajabessa-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF8DD071AF43C64008B0460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF8DD081AF43C64008B0460 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 		9C1CB88E1AF522FC004151AC /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				9C1CB8921AF5244F004151AC /* NSString+Plus.h */,
-				9C1CB8931AF5244F004151AC /* NSString+Plus.m */,
+				9C1CB89F1AF691B1004151AC /* NSString+Plus.h */,
+				9C1CB8A01AF691B1004151AC /* NSString+Plus.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -399,9 +399,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CF8DD0C1AF43C64008B0460 /* AppDelegate.m in Sources */,
-				9C1CB8941AF5244F004151AC /* NSString+Plus.m in Sources */,
 				9CF8DD091AF43C64008B0460 /* main.m in Sources */,
 				9C1CB8841AF46F9A004151AC /* BaseAPIClient.m in Sources */,
+				9C1CB8A11AF691B1004151AC /* NSString+Plus.m in Sources */,
 				9CF8DD431AF44ACB008B0460 /* ListViewController.m in Sources */,
 				9C1CB89A1AF52B0F004151AC /* DetailViewController.m in Sources */,
 				9C1CB8871AF4704D004151AC /* EnvironmentConstants.m in Sources */,
