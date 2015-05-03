@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Promotion.h"
 
 @interface DetailViewController : UIViewController
+
+@property(nonatomic, strong) Promotion *promotion;
 
 @end

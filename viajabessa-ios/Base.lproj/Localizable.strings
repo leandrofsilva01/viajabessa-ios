@@ -9,3 +9,9 @@
 "promo_list_title" = "Pacotes Turísticos";
 
 "promo_detail_title" = "Detalhe do Pacote";
+
+"promo_btn_buy" = "Comprar";
+
+"alert_title" = "Sucesso";
+"alert_msg" = "Seu pacote turístico foi comprado com sucesso.";
+"alert_btn_ok" = "Ok";

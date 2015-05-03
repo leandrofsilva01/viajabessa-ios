@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AFNetworking/UIImageView+AFNetworking.h>
 #import "Promotion.h"
 
 @interface PromotionCollectionViewCell : UICollectionViewCell

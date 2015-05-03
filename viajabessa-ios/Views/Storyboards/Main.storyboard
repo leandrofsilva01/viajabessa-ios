@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WtE-Vc-SPj">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -123,14 +124,74 @@
                                     <constraint firstAttribute="height" constant="273" id="bQX-sg-GNN"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieT-Wo-14K">
+                                <rect key="frame" x="482" y="291" width="102" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.45265012249999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="KdP-5K-eFJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="ajO-lA-yPs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Comprar">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buy:" destination="TkX-jt-Utt" eventType="touchUpInside" id="8TG-92-Ubb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqe-46-D7V">
+                                <rect key="frame" x="16" y="345" width="447" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jEB-kj-8Us"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXJ-Tm-zLb">
+                                <rect key="frame" x="482" y="345" width="102" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mHl-H0-ktu"/>
+                                    <constraint firstAttribute="width" constant="102" id="xlJ-S8-M0Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNk-MN-Zpf">
+                                <rect key="frame" x="16" y="374" width="568" height="218"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ieT-Wo-14K" firstAttribute="leading" secondItem="mog-PU-OqC" secondAttribute="trailing" constant="-118" id="8db-4o-TdG"/>
                             <constraint firstItem="mog-PU-OqC" firstAttribute="leading" secondItem="jYw-gp-M6L" secondAttribute="leading" id="8xr-au-kQO"/>
                             <constraint firstItem="mog-PU-OqC" firstAttribute="top" secondItem="leW-ps-7WK" secondAttribute="bottom" id="Buz-jA-KMB"/>
+                            <constraint firstItem="nqe-46-D7V" firstAttribute="leading" secondItem="jYw-gp-M6L" secondAttribute="leadingMargin" id="FMG-ik-ot9"/>
+                            <constraint firstItem="WNk-MN-Zpf" firstAttribute="leading" secondItem="jYw-gp-M6L" secondAttribute="leadingMargin" id="Mwt-XQ-xsB"/>
+                            <constraint firstItem="WNk-MN-Zpf" firstAttribute="top" secondItem="nqe-46-D7V" secondAttribute="bottom" constant="8" id="ODD-PL-t0L"/>
+                            <constraint firstItem="XXJ-Tm-zLb" firstAttribute="leading" secondItem="nqe-46-D7V" secondAttribute="trailing" constant="19" id="RxZ-Tm-4Xh"/>
+                            <constraint firstItem="XXJ-Tm-zLb" firstAttribute="trailing" secondItem="jYw-gp-M6L" secondAttribute="trailingMargin" id="SbT-5d-k2n"/>
+                            <constraint firstItem="ieT-Wo-14K" firstAttribute="top" secondItem="mog-PU-OqC" secondAttribute="bottom" constant="-46" id="ptu-KN-wUI"/>
                             <constraint firstAttribute="trailing" secondItem="mog-PU-OqC" secondAttribute="trailing" id="qDH-7s-D2T"/>
+                            <constraint firstItem="XXJ-Tm-zLb" firstAttribute="top" secondItem="mog-PU-OqC" secondAttribute="bottom" constant="8" id="vVK-iy-SIX"/>
+                            <constraint firstItem="nqe-46-D7V" firstAttribute="top" secondItem="mog-PU-OqC" secondAttribute="bottom" constant="8" id="vfM-VT-Q92"/>
+                            <constraint firstItem="WNk-MN-Zpf" firstAttribute="trailing" secondItem="jYw-gp-M6L" secondAttribute="trailingMargin" id="xP4-aD-qbF"/>
+                            <constraint firstItem="VmE-35-VVA" firstAttribute="top" secondItem="WNk-MN-Zpf" secondAttribute="bottom" constant="8" id="xex-1a-nvL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnBuy" destination="ieT-Wo-14K" id="JP2-Jz-5th"/>
+                        <outlet property="imgPromotion" destination="mog-PU-OqC" id="Rui-wu-pFu"/>
+                        <outlet property="lblTitle" destination="nqe-46-D7V" id="T9V-BS-MFe"/>
+                        <outlet property="lblValue" destination="XXJ-Tm-zLb" id="UPH-od-DgC"/>
+                        <outlet property="tvDescription" destination="WNk-MN-Zpf" id="Z7F-DN-FJg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sFs-d4-fG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

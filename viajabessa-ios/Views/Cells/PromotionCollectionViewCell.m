@@ -7,6 +7,7 @@
 //
 
 #import "PromotionCollectionViewCell.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
 #import "NSString+Plus.h"
 
 @interface PromotionCollectionViewCell()
