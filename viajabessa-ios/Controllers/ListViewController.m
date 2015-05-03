@@ -12,6 +12,7 @@
 #import "NSString+Plus.h"
 #import "PromotionCollectionViewCell.h"
 #import "DetailViewController.h"
+#import "GAITracker.h"
 
 @interface ListViewController ()
 
@@ -29,6 +30,13 @@
     self.title = NSLocalizedString(@"promo_list_title", nil);
     
     [self fetchPromotions];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [[GAITracker sharedInstance] openScreen:@"ListView"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -92,6 +100,8 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     Promotion *promotion = [self.promotions objectAtIndex:indexPath.row];
+    
+    [[GAITracker sharedInstance] sendEventWithCategory:@"UX" andAction:promotion.title andLabel:promotion.title];
     
     [self performSegueWithIdentifier:@"detailSegue" sender:promotion];
 }

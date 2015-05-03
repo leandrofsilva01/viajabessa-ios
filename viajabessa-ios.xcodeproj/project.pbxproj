@@ -15,6 +15,7 @@
 		9C1CB8941AF5244F004151AC /* NSString+Plus.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8931AF5244F004151AC /* NSString+Plus.m */; };
 		9C1CB8971AF52685004151AC /* PromotionCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8961AF52685004151AC /* PromotionCollectionViewCell.m */; };
 		9C1CB89A1AF52B0F004151AC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB8991AF52B0F004151AC /* DetailViewController.m */; };
+		9C1CB89D1AF5F62C004151AC /* GAITracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1CB89C1AF5F62C004151AC /* GAITracker.m */; };
 		9CF8DD091AF43C64008B0460 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8DD081AF43C64008B0460 /* main.m */; };
 		9CF8DD0C1AF43C64008B0460 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8DD0B1AF43C64008B0460 /* AppDelegate.m */; };
 		9CF8DD141AF43C65008B0460 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF8DD131AF43C65008B0460 /* Images.xcassets */; };
@@ -51,6 +52,8 @@
 		9C1CB8961AF52685004151AC /* PromotionCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionCollectionViewCell.m; sourceTree = "<group>"; };
 		9C1CB8981AF52B0F004151AC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		9C1CB8991AF52B0F004151AC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9C1CB89B1AF5F62C004151AC /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		9C1CB89C1AF5F62C004151AC /* GAITracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAITracker.m; sourceTree = "<group>"; };
 		9CF8DD031AF43C64008B0460 /* viajabessa-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viajabessa-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF8DD071AF43C64008B0460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CF8DD081AF43C64008B0460 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -198,6 +201,8 @@
 		9CF8DD2F1AF44870008B0460 /* Instrumentation */ = {
 			isa = PBXGroup;
 			children = (
+				9C1CB89B1AF5F62C004151AC /* GAITracker.h */,
+				9C1CB89C1AF5F62C004151AC /* GAITracker.m */,
 			);
 			path = Instrumentation;
 			sourceTree = "<group>";
@@ -402,6 +407,7 @@
 				9C1CB8871AF4704D004151AC /* EnvironmentConstants.m in Sources */,
 				9C1CB88A1AF4720C004151AC /* PromotionsAPIClient.m in Sources */,
 				9C1CB8971AF52685004151AC /* PromotionCollectionViewCell.m in Sources */,
+				9C1CB89D1AF5F62C004151AC /* GAITracker.m in Sources */,
 				9C1CB88D1AF494D5004151AC /* Promotion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

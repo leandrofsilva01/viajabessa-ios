@@ -8,4 +8,6 @@
 
 #import "EnvironmentConstants.h"
 
+NSString * const kAppName = @"Viajabessa";
 NSString * const kAPIProductionBaseUrl = @"http://private-74dc9b-viajabessa.apiary-mock.com";
+NSString * const kTrackingID = @"UA-62556177-1";

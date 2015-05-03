@@ -8,4 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const kAppName;
 extern NSString * const kAPIProductionBaseUrl;
+extern NSString * const kTrackingID;

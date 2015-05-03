@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "NSString+Plus.h"
+#import "GAITracker.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 #import <QuartzCore/QuartzCore.h>
 
@@ -47,6 +48,13 @@
     self.btnBuy.clipsToBounds = YES;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [[GAITracker sharedInstance] openScreen:@"ListDetail"];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -64,6 +72,7 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+    [[GAITracker sharedInstance] sendEventWithCategory:@"UX" andAction:@"Buy" andLabel:@"Buy"];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
